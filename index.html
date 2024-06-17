@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="Weather Icon.jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source id="video-source" src="path/to/default-video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="container">
+        <img src="Weather Icon.jpeg" alt="Weather App Logo" class="logo">
+        <h1>Advanced Weather App</h1>
+        <input type="text" id="location-input" placeholder="Enter location">
+        <button onclick="getWeatherByLocation()">Get Weather</button>
+        <button onclick="getWeatherByUserLocation()">Get Weather by My Location</button>
+        <div id="weather-info"></div>
+    </div>
+    <audio id="weather-sound" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
